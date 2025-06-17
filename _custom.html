@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    $for(header-includes)$
+      $header-includes$
+    $endfor$
+
+    $if(title)$
+      <title>$title$</title>
+    $endif$
+
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      #quarto-document-content,
+      .cell-output-display,
+      .leaflet,
+      .leaflet-container,
+      .html-widget {
+        height: 100vh !important;
+        width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    $body$
+  </body>
+</html>
