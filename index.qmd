@@ -14,7 +14,7 @@ format:
 #| message: false
 #| warning: false
 
-# This script creates an interactive map displaying the locations of current Link Up IL partners.
+# This script creates an interactive map displaying the locations of current Link Up IL partners. 
 
 knitr::opts_chunk$set(suppress_messages = TRUE)
 
